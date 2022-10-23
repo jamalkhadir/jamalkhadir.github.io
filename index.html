@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jamal Khadir's Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo">Jamal Khadir</a>
+                <div class="navbar__dropdown" id="dropdown-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links" id="home-page">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__links" id="about-page">
+                            About
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contact" class="navbar__links" id="contact-page">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="navbar__button">
+                        <a href="/resume.html" class="button" target = "_blank">
+                            Resumé
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Home -->
+        <div class = "home" id = "home">
+            <div class="home__container">
+                    <h1 class = "home__header">Hello!</h1>
+                    <h2 class = "home__description">I'm Jamal, <span class="autotype"></span></h2>
+                    <h2 class = "home__description">I am currently pursuing a B.S. in Computer Science at Fordham University.</h2>
+                    <h2 class = "home__description">Learn more about me by clicking the button below!</h2>
+                    <li class="main__button"><a href="#about" class="button">About Me</a></li>
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div class="about" id = "about">
+            <div class="about__container">
+                <div class="about__image-container">
+                    <img src="images/portrait.svg" alt="portraitpicture" id="about__image">
+                </div>
+                <div class="about__content">
+                    <h1>About Me</h1>
+                    <p>I first began learning about programming through a Python-centric course entitled "Coding for All" that I took while attending the Bronx High School of Science.</p>
+                    <p>Subsequently, I took the AP Computer Science A course and had the chance to work with Professor Qiu, a Columbia University graduate.</p>
+                    <p>I attribute much of my passion for coding to this experience, and the reason why Computer Science became the field I currently pursue!</p>
+                </div>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="contact" id="contact">
+            <div class="contact__container">
+                <h1>Contact</h1>
+                <p>If you would like to contact me, you can do so by submitting the form below!</p>
+                <p>Kindly provide your email address so that I know where to email back, as well as the message that you would like to send.</p>
+                <form action="https://formsubmit.co/jamalkhadir@gmail.com" method="POST">
+                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+                    <input type="hidden" name="_subject" value="New message from personal website">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="message" placeholder="Message" required>
+                    <!-- <input type="hidden" name="_next" value="/thankyou.html"> -->
+                    <button type="submit">Send</button>
+               </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer__container">
+            <div class="socials">
+                <div class="socials-wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">Jamal Khadir</a>
+                    </div>
+                    <p class = "rights">© Jamal Khadir 2022. All Rights Reserved.</p>
+                    <div class="icons">
+                        <a href="http://github.com/jamalkhadir" class="socials-link" target = "_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".autotype", {
+                strings: ["a coder.", "an inquirer.", "an aspiring software engineer."],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: false
+            })
+        </script>
+    </body>
+</html>
