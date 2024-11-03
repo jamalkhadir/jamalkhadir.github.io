@@ -17,7 +17,7 @@ const highlightIndicator = () => {
 
     let scrollPos = window.scrollY;
 
-    if (window.innerWidth > 960 && scrollPos < 500){
+    if (window.innerWidth > 960 && scrollPos < 505){
         home.classList.add('highlight');
         about.classList.remove('highlight');
         return;
